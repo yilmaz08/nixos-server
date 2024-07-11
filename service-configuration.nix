@@ -16,8 +16,8 @@
 
   services.logind.lidSwitch = "ignore";
   virtualisation.docker.enable = true;
-
-  ### CUSTOM ###  
+  
+  ### CUSTOM ###
   # Django Server
   systemd.services.django = {
     enable = true;
@@ -28,7 +28,7 @@
       RestartSec = "5min";
       Restart = "on-failure";
 
-      ExecStart = "/srv/www/django/env/bin/python /srv/www/django/manage.py runserver 0.0.0.0:8080";
+      ExecStart = "/srv/www/django/env/bin/python /srv/www/django/manage.py runserver 0.0.0.0:8000";
     };
   };
 }

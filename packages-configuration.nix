@@ -21,6 +21,7 @@
     htop
     tmux
     fish
+    zoxide
   ];
 
   programs.fish.enable = true;
