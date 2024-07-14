@@ -16,8 +16,23 @@
 
   services.logind.lidSwitch = "ignore";
   virtualisation.docker.enable = true;
-  
+
   ### CUSTOM ###
+  # Arch Wiki Turkiye Telegram Bot
+  systemd.services.archwikitrbot = {
+    enable = true;
+    # name = "archwikitrbot";
+    description = "ArchWiki Turkiye Telegram Group Bot";
+    wantedBy = ["multi-user.target"];
+
+    serviceConfig = {
+      RestartSec = "5min";
+      Restart = "on-failure";
+
+      # ExecStartPre = "/bin/sh -c 'until ping -c1 archlinux.org; do sleep 1; done;'";
+      ExecStart = "/srv/bot/archwiki/env/bin/python /srv/bot/archwiki/main.py";
+    };
+  };
   # Django Server
   systemd.services.django = {
     enable = true;
