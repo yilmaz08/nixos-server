@@ -17,6 +17,17 @@
   services.logind.lidSwitch = "ignore";
   virtualisation.docker.enable = true;
 
+  # code-server
+  services.code-server = {
+    enable = true;
+    auth = "password";
+    disableTelemetry = true;
+    host = "...";
+    hashedPassword = "...";
+    user = "...";
+    group = "...";
+  };
+
   ### CUSTOM ###
   # Arch Wiki Turkiye Telegram Bot
   systemd.services.archwikitrbot = {
