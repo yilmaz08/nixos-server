@@ -1,3 +1,5 @@
+INFO: I don't use NixOS anymore because of its limitations on some areas. It is still an amazing OS but not for me
+
 # Home Server Setup
 My home server setup on ayilmaz.xyz
 
