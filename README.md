@@ -1,9 +1,9 @@
-INFO: I don't use NixOS anymore because of its limitations on some areas. It is still an amazing OS but not for me
+DISCLAIMER: I don't use NixOS on my home server anymore and this repository won't be maintained.
 
 # Home Server Setup
 My home server setup on ayilmaz.xyz
 
-I don't provide some parts since it is personal and might cause vulnerabilities.
+I don't provide some parts since they are either personal or possibly vulnerable.
 
 ## Docker
 ### Mail Server
@@ -12,7 +12,6 @@ I host all my xxx@ayilmaz.xyz mails with this.
 ### Nextcloud AIO
 [The official Nextcloud installation method. Provides easy deployment and maintenance with most features included in this one Nextcloud instance.](https://github.com/nextcloud/all-in-one) \
 I host my nextcloud server via Docker and it is really easy to setup.
-
 ### Pi-Hole Docker
 [Pi-hole in a docker container](https://github.com/pi-hole/docker-pi-hole) \
 I host pihole for ad, scam and telemetry blocking.
